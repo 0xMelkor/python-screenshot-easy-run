@@ -8,7 +8,7 @@
 
 4. Setup will generate `start_daemon.bat`. Double click and, when asked, paste the screenshots destination folder in the terminal
 
-That's it!
+That's it! Screenshots will be saved in the folder of your choice when clicking dx mouse button
 
 # If for some reason you need to regenerate the installers
 Clone this repo and install `py2exe` dependencies in your python env.

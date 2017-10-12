@@ -6,7 +6,7 @@
 
 3. Unzip the archive and double click `setup64.exe` or `setup32.exe` (Depending if you installed Python2.7 64 bit or 32 bit)
 
-4. Setup will generate `start_daemon.bat`. Double click and paste the destination folder of you screenshots, when asked
+4. Setup will generate `start_daemon.bat`. Double click and, when asked, paste the screenshots destination folder in the terminal
 
 That's it!
 

@@ -1,3 +1,7 @@
+# Python screenshots
+* Take screenshots on Windows with the dx mouse button
+* Store screenshots in a folder of your choice
+
 # The easy way
 
 1. Install Python2.7 on your machine: [Official repo](https://www.python.org/download/releases/2.7/)

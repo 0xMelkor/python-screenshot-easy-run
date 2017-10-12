@@ -1,2 +1,2 @@
-# python-screenshot-easy-run
-An easier to install version of my python screen app 
+# Run py2exe to generate installers
+`python py2exe_setup.py py2exe`

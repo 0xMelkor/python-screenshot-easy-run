@@ -1,9 +1,13 @@
 # -*- coding: utf-8 -*-
 from distutils.core import setup
+import shutil
 import py2exe
 
 import os
 dataFiles = []
+
+APP_NAME = "pyscreenshots"
+VERSION = "1.0.0.000"
 
 
 def list_dir(dirname, destdir):
@@ -25,27 +29,35 @@ app_files = list_dir('app', 'app')
 
 target32 = Target(
     script="src\\setup32.py",
-    version="1.0.0.000",
+    version=VERSION,
     company_name="fsociety001",
-    name='pyscreenshots',
+    name=APP_NAME,
 )
 
 target64 = Target(
     script="src\\setup64.py",
-    version="1.0.0.000",
+    version=VERSION,
     company_name="fsociety001",
-    name='pyscreenshots',
+    name=APP_NAME,
 )
 
 setup(
     author='Andrea Simeoni',
     author_email='andreasimeoni84@reply.it',
     description = 'Take screenshots with right mouse button',
-    console = [target32, target64]
+    console = [target32, target64],
 )
 
-# os.system('Xcopy /E /I app dist\\app')
-# os.system('Xcopy /E /I lib dist\\lib')
-os.system('mklink setup32.exe dist\\setup32.exe')
-os.system('mklink setup64.exe dist\\setup64.exe')
+os.system('Xcopy /E /I app dist\\app')
+os.system('Xcopy /E /I lib dist\\lib')
+
+# Create output dir
+output_dir = '%s-%s' % (APP_NAME, VERSION)
+os.system('mkdir %s' % output_dir)
+os.system('Xcopy /E /I dist %s' % output_dir)
+shutil.make_archive(output_dir, 'zip', output_dir)
+
+# clean
 os.system('rmdir build /s /q')
+os.system('rmdir dist /s /q')
+os.system('rmdir %s /s /q' % output_dir)

@@ -32,6 +32,7 @@ if __name__ == "__main__":
     if not os.path.exists(dirpath):
         os.makedirs(dirpath)
 
+
     hm = pyHook.HookManager()
     hm.SubscribeMouseRightDown(right_down)
     hm.HookMouse()

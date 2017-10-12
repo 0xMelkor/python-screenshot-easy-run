@@ -15,28 +15,15 @@ import shutil
 import py2exe
 
 import os
-dataFiles = []
+
 
 APP_NAME = "pyscreenshots"
 VERSION = "1.0.0.000"
-
-
-def list_dir(dirname, destdir):
-    result = []
-    for file in os.listdir(dirname):
-        f1 = os.path.join(file, dirname)
-        f2 = destdir, [f1]
-        result.append(f2)
-    return result
-
 
 class Target:
     def __init__(self, **kw):
         self.__dict__.update(kw)
 
-
-lib_files = list_dir('lib', 'lib')
-app_files = list_dir('app', 'app')
 
 target32 = Target(
     script="src\\setup32.py",

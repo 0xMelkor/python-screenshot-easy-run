@@ -1,4 +1,15 @@
 # -*- coding: utf-8 -*-
+"""
+      _             _                              _                   
+     | |           | |                            | |                  
+  ___| |_ __ _  ___| | __  ___ _ __ ___   __ _ ___| |__   ___ _ __ ___ 
+ / __| __/ _` |/ __| |/ / / __| '_ ` _ \ / _` / __| '_ \ / _ \ '__/ __|
+ \__ \ || (_| | (__|   <  \__ \ | | | | | (_| \__ \ | | |  __/ |  \__ \
+ |___/\__\__,_|\___|_|\_\ |___/_| |_| |_|\__,_|___/_| |_|\___|_|  |___/
+
+@author: Andrea Simeoni 12 ott 2017   
+https://github.com/insanediv/python-screenshot-easy-run/blob/master/py2exe_setup.py
+"""
 from distutils.core import setup
 import shutil
 import py2exe

@@ -12,5 +12,3 @@ with open("start_daemon.bat", "w") as start_script:
     start_script.write('set /p folder="Paste the destination folder path: "')
     start_script.write('\n')
     start_script.write('start venv\Scripts\python.exe app\pyscreen.py %folder%')
-
-os.system('mklink ..\\start_daemon.lnk dist\\start_daemon.bat')

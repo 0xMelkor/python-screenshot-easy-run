@@ -9,9 +9,6 @@ os.system("virtualenv -p 2.7 %s" % VIRTUAL_ENV_DIR)
 os.system("%s\Scripts\pip install -r lib\\requirements.txt" % VIRTUAL_ENV_DIR)
 
 with open("start_daemon.bat", "w") as start_script:
-    start_script.write("start %s\Scripts\python.exe app\pyscreen.py" % VIRTUAL_ENV_DIR)
-
-with open("stop_daemon.bat", "w") as stop_script:
-    stop_script.write("start taskkill /f /im python.exe")
-
-print("DONE !")
+    start_script.write('set /p folder="Paste the destination folder path: "')
+    start_script.write('\n')
+    start_script.write('start venv\Scripts\python.exe app\pyscreen.py %folder%')

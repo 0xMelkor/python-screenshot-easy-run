@@ -7,5 +7,5 @@
 2. Launch the installer
 3. Double click `start_daemon.bat` in the installation folder to launch the program.  When asked, paste the screenshots destination folder in the terminal
 
-**That's it!** Screenshots will be saved in the folder of your choice when clicking dx mouse button
+**That's it!** Screenshots will be saved in the folder of your choice when clicking the dx mouse button
 

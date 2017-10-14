@@ -1,6 +1,0 @@
-lib/pyHook-1.5.1-cp27-cp27m-win_amd64.whl
-EasyProcess==0.2.3
-olefile==0.44
-Pillow==4.2.1
-pypiwin32==219
-pyscreenshot==0.4.2
